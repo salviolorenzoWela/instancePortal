@@ -40,10 +40,10 @@ export default class Instances extends Component {
 						<NavLink to={`/client/${client.name}`}>
 							<div className='client' key={index}>
 								<h4>{client.name}</h4>
-								<div>
-									<span>Domain: {client.domain}</span>
-									<span>Seats: {client.seats}</span>
-									<span>{client.active ? 'Active' : 'Inactive'}</span>
+								<div className='clientInfo'>
+									<div>Domain: {client.domain}</div>
+									<div>Seats: {client.seats}</div>
+									<div>{client.active ? 'Active' : 'Inactive'}</div>
 								</div>
 							</div>
 						</NavLink>

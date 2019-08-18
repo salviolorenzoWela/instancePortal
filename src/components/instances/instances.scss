@@ -1,0 +1,28 @@
+.instances {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	a {
+		width: 80%;
+	}
+
+	.client {
+		outline: 1px dashed black;
+		display: inherit;
+		width: 100%;
+		padding: 10px;
+		margin: 10px 0;
+
+		h4 {
+			margin-top: 0;
+		}
+
+		.clientInfo {
+			display: inherit;
+			flex-direction: column;
+		}
+	}
+}
