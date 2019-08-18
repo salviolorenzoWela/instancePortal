@@ -32,9 +32,16 @@ export default class Instances extends Component {
 		};
 	}
 
+	handleNewClient() {
+		console.log('New Client');
+	}
+
 	render() {
 		return (
 			<div className='instances'>
+				<div className='buttonContainer'>
+					<button onClick={this.handleNewClient}>New +</button>
+				</div>
 				{this.state.clients.map((client, index) => {
 					return (
 						<NavLink to={`/client/${client.name}`}>
