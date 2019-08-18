@@ -1,0 +1,66 @@
+.client {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	background-color: aliceblue;
+
+	.headingBox {
+		display: inherit;
+		margin-top: 10px;
+		width: 93%;
+		justify-content: space-between;
+		padding: 5px 0;
+		h2 {
+			margin: 0;
+			font-weight: 400;
+		}
+
+		.status {
+			color: white;
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-weight: 700;
+		}
+		.active {
+			background-color: rgb(0, 186, 0);
+		}
+		.inactive {
+			background-color: red;
+		}
+	}
+
+	.settingsBox {
+		width: 45%;
+		height: 40%;
+		background-color: white;
+		border-radius: 10px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		padding: 10px;
+		display: inherit;
+		flex-direction: column;
+		// flex-wrap: wrap;
+		overflow-y: scroll;
+
+		h3 {
+			margin: 0;
+			font-weight: 300;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 10px;
+			margin: 0;
+
+			h5 {
+				margin: 5px 0 0 0;
+			}
+
+			li {
+				padding-left: 5px;
+			}
+		}
+	}
+}
