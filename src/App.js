@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Home from './components/home/home';
@@ -10,10 +10,10 @@ function App() {
   return (
     <>
       <Router>
-        <div className="App">
+        <div className='App'>
           <Header />
-          <Route path='/' exact component={Home}></Route>
-          <Route path='/instances' component={Instances}></Route>
+          <Route path='/' exact component={Home} />
+          <Route path='/instances' component={Instances} />
           <Footer />
         </div>
       </Router>
